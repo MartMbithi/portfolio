@@ -73,11 +73,11 @@
 		]
 	},
 	{
-		"project": "andrewnelson.net",
-		"url": "https://github.com/atlamors/portfolio",
-		"repo": "Public",
-		"descriptionTitle": "An open source portfolio",
-		"description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+		"project": "IVA System",
+		"url": "ivas.makueni.go.ke/",
+		"repo": "Private",
+		"descriptionTitle": "",
+		"description": "Explore Makueni County IVA System, the online platform connecting students to internship, industrial attachment, mentorship, and volunteer opportunities in Makueni County. Start your journey to professional growth today",
 		"imageOptions": [
 			{
 				"key": "size",
@@ -95,28 +95,23 @@
 		],
 		"stack": [
 			{
-				"key": "nextjs",
-				"name": "Next.js",
+				"key": "php",
+				"name": "PHP",
 				"type": "devicon"
 			},
 			{
-				"key": "react",
-				"name": "React",
-				"type": "devicon"
-			},
-			{
-				"key": "nodejs",
-				"name": "Node.js",
-				"type": "devicon"
-			},
-			{
-				"key": "mongodb",
-				"name": "MongoDB",
+				"key": "mysql",
+				"name": "mySQL",
 				"type": "devicon"
 			},
 			{
 				"key": "javascript",
 				"name": "JavaScript",
+				"type": "devicon"
+			},
+			{
+				"key": "jquery",
+				"name": "jQuery",
 				"type": "devicon"
 			},
 			{
