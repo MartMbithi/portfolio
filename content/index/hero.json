@@ -1,6 +1,6 @@
 {
 	"intro": {
-		"start": "const mart = ( , passion ) =>",
+		"start": "const mart = ( name, passion ) =>",
 		"end": "Hey there, I`m ",
 		"speed": 60,
 		"deletionSpeed": 80,
@@ -21,7 +21,7 @@
 			"leaveSite": false
 		},
 		"secondary": {
-			"title": "LinkedIn",
+			"title": "Github",
 			"url": "",
 			"leaveSite": "true"
 		}
