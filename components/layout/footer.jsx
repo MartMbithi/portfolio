@@ -31,9 +31,10 @@ export default function Footer() {
 	return (
 		<footer className={css.container}>
 			<Container spacing={['verticalXXLrg', 'bottomLrg']}>
-				<section className={css.sections}>
-					<ul className={css.social}>
-						<li><h4>Social</h4></li>
+				<section className={css.github}>
+					<a href={settings.portfolio.repo_html} rel="noreferrer" target="_blank">
+						<h5>{settings.portfolio.forkthis}</h5>
+						<ul className={css.social}>
 						<li className={css.socialList}>
 							{
 							content.social.map( ({ url, icon }, index) => {
@@ -44,8 +45,13 @@ export default function Footer() {
 							}
 						</li>
 					</ul>
+						<ul>
+							<li>
+								<p> Proudly Powered By <a href="https://devlan.co.ke" target="blank">Devlan Solutions LTD</a></p>
+							</li>
+						</ul>
+					</a>
 				</section>
-		
 			</Container>
 			<canvas id="gradient-canvas" className={''} data-transition-in ></canvas>
 		</footer>
