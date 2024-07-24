@@ -1,18 +1,22 @@
 [
 	{
 		"url": "/",
+		"title": "Home"
+	},
+	{
+		"url": "/about",
 		"title": "About Me"
 	},
 	{
-		"url": "/case-studies",
-		"title": "Case Studies"
+		"url": "/experience",
+		"title": "Experiences"
 	},
 	{
-		"url": "/articles",
-		"title": "Articles"
+		"url": "/portfolio",
+		"title": "Portfolio"
 	},
 	{
-		"url": "/projects",
-		"title": "Projects"
+		"url": "/contact",
+		"title": "Contact"
 	}
 ]
