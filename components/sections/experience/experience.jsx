@@ -27,13 +27,7 @@ export default function About() {
 		<Section classProp={about.section}>
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="About Me"
-					subTitle="Experienced Software Engineer with a robust background spanning over 6 years, specializing in Linux and Unix cloud architectures and administration. 
-					My expertise extends to developing resilient solutions across diverse landscapes, using Java, PHP, Python and Javascript. 
-					I have a strong foundation in industry-leading frameworks such as Spring Boot, Flask, Django, Laravel and NextJs.
-					I excel in project management and agile methodologies, ensuring efficient team collaboration and adapting to evolving project requirements.
-					As a versatile full-stack developer, I prioritize User Interface (UI) and User Experience (UX) best practices, 
-					leveraging tools like Adobe XD and Figma for optimal design, also my expertise in version control ensures streamlined collaboration and effective code management throughout the development process. "
+					title="My Experiences"
 				/>
 				
 				<section className={about.content}>
