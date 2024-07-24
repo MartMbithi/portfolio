@@ -8,32 +8,25 @@ import Container from '../../structure/container';
 // Section general blocks
 import SectionTitle from '../../blocks/section.title.block'
 
-// Section specific blocks
-import BadgesBlock from '../../blocks/about.badges.block'
-import CopyBlock from '../../blocks/about.copy.block'
-
 // Section scss
 import about from '../../../styles/sections/index/about.module.scss';
 
-/**
- * Section: About
- * An overview of yourself.
- * Highlight your top level attributes and disciplines.
- * 
- * @returns {jsx} <About />
- */
+
 export default function About() {
 	return (
 		<Section classProp={about.section}>
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
 					title="About Me"
-					subTitle="Experienced Software Engineer with a robust background spanning over 6 years, specializing in Linux and Unix cloud architectures and administration. 
-					My expertise extends to developing resilient solutions across diverse landscapes, using Java, PHP, Python and Javascript. 
-					I have a strong foundation in industry-leading frameworks such as Spring Boot, Flask, Django, Laravel and NextJs.
-					I excel in project management and agile methodologies, ensuring efficient team collaboration and adapting to evolving project requirements.
-					As a versatile full-stack developer, I prioritize User Interface (UI) and User Experience (UX) best practices, 
-					leveraging tools like Adobe XD and Figma for optimal design, also my expertise in version control ensures streamlined collaboration and effective code management throughout the development process. "
+					subTitle="I am an experienced Software Engineer with over 6 years specializing in Linux  and Unix cloud
+					architecture and administration. My skills encompass developing resilient solutions in various programming
+					languages including PHP, Java, Python, JavaScript, Ruby, C, and Bash. I am proficient in frameworks such as
+					Laravel, Spring Boot, Flask, Django and NextJs. I have a strong foundation in managing
+					cloud infrastructure, implementing scalable and secure solutions, and optimizing cloud performance. 
+					Additionally, I excel in CMS platforms like WordPress, Drupal, and Joomla, and have expertise in both SQL 
+					(MySQL, Microsoft SQL Server) and NoSQL (MongoDB, PostgreSQL, Redis) databases. As a versatile full-stack developer, 
+					I am also skilled in UI/UX design tools like Adobe XD and Figma, and have strong version control capabilities. 
+					I am a dedicated team player with excellent communication skills and a passion for learning new technologies."
 				/>
 			</Container>
 		</Section>

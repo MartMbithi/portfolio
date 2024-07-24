@@ -16,15 +16,6 @@ import button 		from '../../../styles/blocks/button.module.scss';
 import content		from '../../../content/index/hero.json'
 
 
-/**
- * TO DO LIST
- *
- * - Create a typog.modules.scss
- *   Load this module onto every component, and use predefined typography classes to keep typography consistent
- *
- * - space.modules.scss
- *   Load this module onto every component, and use predefined spacial classes to keep geometry consistent
- */
 
 export default function Hero() {
 
