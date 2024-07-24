@@ -35,33 +35,6 @@ export default function About() {
 					As a versatile full-stack developer, I prioritize User Interface (UI) and User Experience (UX) best practices, 
 					leveraging tools like Adobe XD and Figma for optimal design, also my expertise in version control ensures streamlined collaboration and effective code management throughout the development process. "
 				/>
-				
-				<section className={about.content}>
-					<div className={about.image}>
-						<img src="/img/my_photo.jpg" alt="Martin Mbithi" />
-						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
-					</div>
-					<div className={about.copy} >
-						<CopyBlock
-							title="Softskills that pay the bills"
-							containerClass={about.container}
-							iconClass={about.icon}
-							icon={['fat', 'ear-listen']}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
-						/>
-						<BadgesBlock
-							title="Reasearch and planning"
-							containerClass={about.container}
-							list={methods}
-							fullContainer="fullContainer"
-							block="methods"
-							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
-							//invertedColor="invertedColor"
-							headerIcon={`${about.icon}`}
-						/>
-					</div>
-				</section>
 			</Container>
 		</Section>
 	)
