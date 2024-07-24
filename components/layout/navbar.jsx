@@ -132,6 +132,7 @@ export default function Navbar() {
 
 	return (
 		<nav id="Navbar" className={css.container}>
+			
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
 					<Link className={css.logo} href="/"  >
