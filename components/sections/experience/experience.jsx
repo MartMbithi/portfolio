@@ -7,65 +7,97 @@ import Container from '../../structure/container';
 
 // Section general blocks
 import SectionTitle from '../../blocks/section.title.block'
+import SectionGridBg from '../../blocks/section.grid.block'
 
 // Section specific blocks
 import BadgesBlock from '../../blocks/about.badges.block'
 import CopyBlock from '../../blocks/about.copy.block'
 
 // Section scss
-import about from '../../../styles/sections/index/about.module.scss';
+import about from '../../../styles/sections/index/about.module.scss'
 
 /**
- * Section: About
- * An overview of yourself.
- * Highlight your top level attributes and disciplines.
+ * Section: Technical
+ * Highlight your technical skills with a short blurb about you,
+ * Then display the programs you are proficient with and the technologies you use if applicable.
  * 
- * @returns {jsx} <About />
+ * @returns {jsx} <Technical />
  */
-export default function About() {
+export default function Technical() {
 	return (
-		<Section classProp={about.section}>
+		<Section classProp={`${about.section} borderBottom`}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="My Experiences"
+					title="Technical"
+					preTitle="Hardskills"
+					subTitle="As a creative technologist, I craft intuitive digital experiences using a diverse set of tools and languages."
 				/>
-				
-				<section className={about.content}>
-					<div className={about.image}>
-						<img src="/img/my_photo.jpg" alt="Martin Mbithi" />
-						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
-					</div>
-					<div className={about.copy} >
-						<CopyBlock
-							title="Softskills that pay the bills"
-							containerClass={about.container}
+				<section className={`${about.content} ${about.container}`}>
+					<div className={about.copy}>
+						<CopyBlock 
+							title="Polymath foundations"
+							icon={[ 'fat', 'chart-network' ]}
+							copy="With a strong foundation in both design and development, I bring a unique perspective to every project and am constantly learning and evolving to stay up-to-date with the latest industry trends."
 							iconClass={about.icon}
-							icon={['fat', 'ear-listen']}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
-						/>
-						<BadgesBlock
-							title="Reasearch and planning"
 							containerClass={about.container}
-							list={methods}
-							fullContainer="fullContainer"
-							block="methods"
-							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
-							//invertedColor="invertedColor"
-							headerIcon={`${about.icon}`}
 						/>
+						<BadgesBlock 
+							title="Software I love to work with" 
+							copy="With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
+							list={software}
+							block="software" 
+							fullContainer="fullContainer"
+							icon="grid-2-plus"
+							containerClass={about.container}
+							headerIcon={about.icon} 
+						/>
+						<BadgesBlock 
+							title="Technologies I love to build with" 
+							copy="I deeply enjoy solving problems through code. From the front end all the way to the back end and the APIs in-between. No project is too challenging for me."
+							list={tech} 
+							block="tech"
+							fullContainer="fullContainer" 
+							icon="laptop-code"
+							containerClass={about.container}
+							headerIcon={about.icon} 
+						/>							
 					</div>
-				</section>
+					<div className={`${about.image} ${about.technicalSvg}`}>
+						<Image src="/img/dataism-24.svg" width={477} height={1111} alt="Data Strings 01 by Colorpong: https://ywft.us/2177b695b" />
+					</div>
+				</section>	
 			</Container>
+			{/* <SectionGridBg gridSize={4}/> */}
 		</Section>
 	)
 }
 
-const methods = [
-	{ key: 'planet-moon', name: 'User Research', type: 'fad' },
-	{ key: 'qrcode', name: 'Digital Strategy', type: 'fad' },
-	{ key: 'window', name: 'Design Systems', type: 'fad' },
-	{ key: 'cubes', name: 'Product Strategy', type: 'far' },
-	{ key: 'layer-plus', name: 'Brand Strategy', type: 'fad' },
-	{ key: 'solar-system', name: 'Operations', type: 'fad' },
+const software = [
+	{ key: 'photoshop', 	name: 'Photoshop', 			type: 'devicon' },
+	{ key: 'illustrator', 	name: 'Illustrator', 		type: 'devicon' },
+	{ key: 'figma', 		name: 'Figma', 				type: 'devicon' },
+	{ key: 'vscode', 		name: 'VSCode', 			type: 'devicon' },
+	{ key: 'mailbox', 		name: 'Postman', 			type: 'fas' },
+	{ key: 'computer-mouse',name: 'Click Up', 			type: 'fas' },
+	{ key: 'list-music',	name: 'Ableton', 			type: 'fas' },
+	{ key: 'aftereffects',	name: 'After Effects', 		type: 'devicon' },
+	{ key: 'premierepro',	name: 'Premiere Pro', 		type: 'devicon' },
+]
+
+const tech	= [
+	{ key: 'javascript', 	name: 'JavaScript', 		type: 'devicon' },
+	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
+	{ key: 'react', 		name: 'React', 				type: 'devicon' },
+	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
+	{ key: 'jquery', 		name: 'jQuery', 			type: 'devicon' },
+	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
+	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
+	{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },
+	{ key: "google",		name: "GA4/GTM", 			type: "devicon" },
+	{ key: 'html5', 		name: 'HTML5', 				type: 'devicon' },
+	{ key: 'css3', 			name: 'CSS3', 				type: 'devicon' },
+	{ key: 'sass', 			name: 'SASS', 				type: 'devicon' },
+	{ key: 'git', 			name: 'Git', 				type: 'devicon' },
+	{ key: 'mysql', 		name: 'MySQL', 				type: 'devicon' },
+	{ key: 'mongodb', 		name: 'MongoDB', 			type: 'devicon' },
 ]
