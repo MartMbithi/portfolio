@@ -180,7 +180,7 @@ export default function About() {
               <div style={{ height: '3px', background: 'linear-gradient(90deg, var(--accent), #00b4d8)' }} />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://martmbithi.github.io/assets/img/slider/martin_profile.webp"
+                src="/images/martin_profile.webp"
                 alt="Martin Mbithi"
                 style={{
                   width: '100%',
